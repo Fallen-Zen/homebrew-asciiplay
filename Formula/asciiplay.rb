@@ -20,7 +20,7 @@ class Asciiplay < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/asciiplay --version")
 
-    system Formula["ffmpeg"].opt_bin/"ffmpeg", "-v", "error", "-f", "lavfi",
+    system formula_opt_bin("ffmpeg")/"ffmpeg", "-v", "error", "-f", "lavfi",
            "-i", "testsrc=size=96x96:duration=1", "-frames:v", "1", "t.png"
     out = shell_output("#{bin}/asciiplay --ascii --cols 24 t.png")
     assert_match(/\S/, out)
