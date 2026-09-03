@@ -1,8 +1,8 @@
 class Asciiplay < Formula
   desc "Shape-matched ASCII art from images and video"
   homepage "https://github.com/Fallen-Zen/asciiplay"
-  url "https://github.com/Fallen-Zen/asciiplay/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "6abc4ed29829401ad97944d2dafb6f11e99782c40518cf9905793ac502ea4ef6"
+  url "https://github.com/Fallen-Zen/asciiplay/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "a12605d98ccd891d8728dfd2d688c0df081c8971971d7ed51e97a01c637a1dc2"
   license "MIT"
   head "https://github.com/Fallen-Zen/asciiplay.git", branch: "main"
 
